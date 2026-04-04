@@ -1,0 +1,16 @@
+# Template de profile — copie e renomeie para <nome-do-ambiente>.yaml
+name: meu-ambiente
+description: "Descrição do ambiente"
+category: kubernetes        # kubernetes | openshift | database | cliente | generic
+wsl_user: meu-usuario
+color: blue                 # purple | blue | amber | teal | coral | gray | green
+kubeconfig: ""
+namespace: ""
+env: {}
+aliases:
+  ll: ls -lah
+integrations:
+  orchestrator: false
+  oracle: false
+  openshift: false
+check: []

@@ -1,0 +1,23 @@
+# Profiles reais — contêm dados sensíveis
+profiles/*.yaml
+!profiles/template.yaml
+
+# Dados de runtime
+*.db
+*.log
+logs/
+.envctl/
+
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+.env
+venv/
+.venv/
+
+# Sistema
+.DS_Store
+*.swp
+*.swo
+*~
