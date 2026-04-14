@@ -396,7 +396,7 @@ def enter_profile(profile: Profile):
             val = str(v).replace("~", f"/home/{profile.wsl_user}")
             env_exports += f" export {k}={val};"
 
-        zsh_cmd = f"{env_exports} exec zsh -l"
+        zsh_cmd = f"{env_exports} cd ~; exec zsh -l"
 
         console.print(f"\n[dim]Iniciando sessão {profile.wsl_user}...[/dim]\n")
 
